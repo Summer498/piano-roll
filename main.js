@@ -14,11 +14,14 @@ function drawKeyBackground(ctx, width, height, lowestMidi, highestMidi) {
   const keyCount = highestMidi - lowestMidi + 1;
   const rowHeight = height / keyCount;
 
+  ctx.strokeStyle = '#bbb';
+  ctx.lineWidth   = 1;
   for (let i = 0; i < keyCount; i++) {
     const midi = highestMidi - i;          // 上から順に描く場合
     const pc   = midi % 12;
     ctx.fillStyle = WHITE_PCS.has(pc) ? '#ffffff' : '#dddddd';
     ctx.fillRect(0, i * rowHeight, width, rowHeight);
+    ctx.strokeRect(0, i * rowHeight, width, rowHeight);
   }
 }
 
