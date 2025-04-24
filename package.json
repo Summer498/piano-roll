@@ -1,0 +1,15 @@
+{
+  "name": "piano-roll",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Summer498/piano-roll.git",
+  "author": "Summer498 <subore02@gmail.com>",
+  "license": "UNLICENCED",
+  "scripts": {
+    "build": "tsup index.ts"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
