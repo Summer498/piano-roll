@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piano Roll &amp; Staff Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="toolbar">
+      <button id="toggle-view">五線譜に切り替え</button>
+      <label for="tempo">Tempo:</label>
+      <input type="range" id="tempo" min="30" max="300" value="120" />
+    </header>
+
+    <div id="canvas-container">
+      <canvas id="piano-roll-canvas" width="1200" height="400"></canvas>
+      <canvas id="staff-canvas" class="hidden" width="1200" height="400"></canvas>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
